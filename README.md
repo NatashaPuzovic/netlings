@@ -83,7 +83,7 @@ History (PVF) table design:
 Example history file table for 3 genes (threeGenes.hist):
 
 | # generation | mean P1 in pop  | mean P2 in pop  | mean P3 in pop  | var P1 in pop  | var P2 in pop  | var P3 in pop | mean fitness |
-|:---|:---:|:---:|:---:|
+|:---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | 1 | 60.5  | 32.6 | 22.3 | 520.2 | 32.6 | 101.5 | 0.001 |
 | 50  | 59.5 | 34.4 | 26.2 | 59.5 | 33.4 | 99.2 | 0.003 |
 | ... | ... | ... | ... | ... | ... | ... | ... |
@@ -155,7 +155,7 @@ It's purpose is to output the full information about the last generation, as opp
 Population table design:
 
 | # last generation | # individual in pop | noise genotype of individual | sbasal genotype of individual | linearized net genotype of individual | phenotype of individual | fitness of individual |
-|---|---|---|---| 
+|---|---|---|---|---|---|---| 
 | integer num | # individual | real num x #NUM_NODES | real num x #NUM_NODES | real num x (#NUM_NODES x #NUM_NODES) | real num x #NUM_NODES | real num |
 | ... | ... | ... | ... | ... | ... | ... |
 | ... | ... | ... | ... | ... | ... | ... |
@@ -163,7 +163,7 @@ Population table design:
 Example population file table for 3 genes (threeGenes.pop):
 
 | # last generation | # individual in pop | eta1 | eta2 | eta3 | sb1 | sb2 | sb3 | w11 | w12 | w13 | w21 | w22 | w23 | w31 | w32 | w33 | s1 | s2 | s3 | f |
-|---|---|---|---| 
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | 10000 | 1 | 55.2 | 0.2 | 10.3 | 17.1 | 93.2 | 56.3 | 0 | 0 | -0.2 | 1.2 | 0 | -0.002 | 0 | 2.7 | 0 | 27.9 | 94.0 | 60.2 | 0.15 |
 | 10000 | 2 | 32.3 | 0.2 | 10.3 | 17.1 | 93.2 | 56.3 | 0 | 0 | -0.2 | 1.2 | 0 | -0.002 | 0 | 2.7 | 0 | 19.6 | 93.0 | 49.5 | 0.27 |
 | ... | ... | ... | ... | ... | ... | ... |
