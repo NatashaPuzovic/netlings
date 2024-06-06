@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
 {
     std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" << std::endl;
     std::cout << "~                                             ~" << std::endl;
-    std::cout << "~           netlings version 1.1.1            ~" << std::endl;
+    std::cout << "~           netlings version 2.1.1            ~" << std::endl;
     std::cout << "~                                             ~" << std::endl;
     std::cout << "~     Evolve networks and gene expression     ~" << std::endl;
     std::cout << "~                                             ~" << std::endl;
