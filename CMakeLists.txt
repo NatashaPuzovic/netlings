@@ -2,12 +2,17 @@ cmake_minimum_required(VERSION 3.5)
 set(CMAKE_C_COMPILER "gcc")
 set(CMAKE_CXX_COMPILER "g++")
 
-project(enoise)
+project (netlings)
 
+#set (CMAKE_BUILD_TYPE Debug)
 set (CMAKE_BUILD_TYPE Release)
-set (CMAKE_CXX_FLAGS "-Wall -Weffc++ -Wshadow -Wconversion -std=c++17")
-set (source_dir "${PROJECT_SOURCE_DIR}/src/")
+set (CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Wshadow -Wconversion -Weffc++ -std=c++17")
 
-file (GLOB source_files "${source_dir}/*")
-
-add_executable(enoise "${source_files}")
+add_executable(netlings
+				 src/main.cpp
+				 src/Netling.cpp
+				 src/Netling.h
+				 src/Population.cpp
+				 src/Population.h
+				 src/Params.cpp
+				 src/Params.h)
